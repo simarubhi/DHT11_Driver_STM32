@@ -42,6 +42,8 @@ int main(void)
     dht11_data data = dht11_data_read();
     
     ...
+
+    HAL_Delay(3000); // Recommended to have at least 3 second delay between reads
   }
 
 }
@@ -91,15 +93,18 @@ int main(void)
     
     dht11_data data = dht11_data_read();
     
-    if (data.error) {
-		  sprintf((char *)buffer, "There is an error reading the DHT11\r\n");
-	  } else {
-		  sprintf((char *)buffer, "Temperature: %.1f C, Humidity: %.1f%%\r\n", data.temperature, data.humidity);
-	  }
+    if (data.error)
+    {
+	sprintf((char *)buffer, "There is an error reading the DHT11\r\n");
+    }
+    else
+    {
+	sprintf((char *)buffer, "Temperature: %.1f C, Humidity: %.1f%%\r\n", data.temperature, data.humidity);
+    }
 
-	  HAL_UART_Transmit(&huart2, buffer, strlen((char *)buffer), HAL_MAX_DELAY);
+    HAL_UART_Transmit(&huart2, buffer, strlen((char *)buffer), HAL_MAX_DELAY);
 
-	  HAL_Delay(3000);
+    HAL_Delay(3000);
 
     ...
   }
