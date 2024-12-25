@@ -31,7 +31,7 @@ int main(void)
 {
   ...
 
-  dht11_init(GPIOA, GPIO_PIN_1, &htim6);
+  dht11_init(GPIOA, GPIO_PIN_1, &htim6); // Port, Pin, Timer
 
   ...
 
