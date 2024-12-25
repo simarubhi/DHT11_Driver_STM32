@@ -14,7 +14,7 @@ Prior to generating code in STM32CubeIDE, set a basic timer (usually tim6 or tim
 
 ![Clock Configuration](https://github.com/simarubhi/DHT11_Driver_STM32/blob/main/docs/clock_config.png)
 
-The example below uses timer 6 which is a basic timer on the STM32 Nucleo F446RE board. It is configured to 84Mhz by default when checking the clock configuration tab of the IOC file. After checking what frequency your timer is running at go to the Pinout & Configuration tab, the timer you have chosen, and set the prescaler to whatever frequency -1 your timer is. Also ensure to set the counter period to the maximum value (usually 0xffff-1)
+The example below uses timer 6 which is a basic timer on the STM32 Nucleo F446RE board. It is configured to 84Mhz by default when checking the clock configuration tab of the IOC file. After checking what frequency your timer is running at go to the Pinout & Configuration tab, the timer you have chosen, and set the prescaler to whatever frequency -1 your timer is. Also ensure to set the counter period to the maximum value (usually 0xffff-1). Lastly set any GPIO capable pin of your choice to gpio_output. In the below example GPIO_PIN_1 has been chosen.
 
 ![Clock Configuration](https://github.com/simarubhi/DHT11_Driver_STM32/blob/main/docs/clock_prescaler.png)
 
