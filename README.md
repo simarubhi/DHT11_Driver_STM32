@@ -9,6 +9,10 @@ Driver library for the DHT11 temperature sensor for STM32 microcontrollers
 ## Usage
 
 ```c
+#include "dht11_driver.h"
+
+...
+
 int main(void)
 {
   ...
@@ -33,6 +37,12 @@ int main(void)
 ## Displaying Data Via UART
 
 ```c
+#include "dht11_driver.h"
+#include "stdio.h"
+#include "string.h"
+
+...
+
 int main(void)
 {
   ...
