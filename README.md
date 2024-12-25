@@ -73,6 +73,9 @@ int main(void)
 }
 ```
 
+![UART Demo](https://github.com/simarubhi/DHT11_Driver_STM32/blob/main/docs/uart_demo.png)
+
+
 ## Lessons Learned
 
 What I learned
