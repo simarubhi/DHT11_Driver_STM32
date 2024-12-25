@@ -6,6 +6,13 @@ Driver library for the DHT11 temperature sensor for STM32 microcontrollers
 
 
 
+# DHT11 Temperature Sensor Driver Library For STM32
+
+Driver library for the DHT11 temperature sensor for STM32 microcontrollers
+
+
+
+
 ## Usage
 ### Setup
 
@@ -20,6 +27,9 @@ The example below uses timer 6 which is a basic timer on the STM32 Nucleo F446RE
 
 
 ### Basic Implementation
+
+main.c
+
 ```c
 #include "dht11_driver.h"
 
@@ -57,11 +67,11 @@ typedef struct {
 } dht11_data;
 ```
 
-In main.c
+main.c
 ```c
 dht11_data data = dht11_data_read(); // Get data from DHT11
 float humidity = data.humidity; // Get the humidity
-float temperature = data.temperature; // Get the humidity
+float temperature = data.temperature; // Get the temperature
 bool error = data.error; // Check if there was an error in getting data (requires #include <stdbool.h>)
 
 ```
@@ -104,6 +114,14 @@ int main(void)
 
 }
 ```
+![UART Demo](https://github.com/simarubhi/DHT11_Driver_STM32/blob/main/docs/uart_demo.png)
+
+
+## 🔗 My Links
+[![portfolio](https://img.shields.io/badge/my_portfolio-000?style=for-the-badge&logo=ko-fi&logoColor=white)](https://simarubhi.com/)
+[![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/simar-ubhi/)
+
+
 ![UART Demo](https://github.com/simarubhi/DHT11_Driver_STM32/blob/main/docs/uart_demo.png)
 
 
