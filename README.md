@@ -5,14 +5,6 @@ Driver library for the DHT11 temperature sensor for STM32 microcontrollers
 
 
 
-
-# DHT11 Temperature Sensor Driver Library For STM32
-
-Driver library for the DHT11 temperature sensor for STM32 microcontrollers
-
-
-
-
 ## Usage
 ### Setup
 
@@ -23,7 +15,7 @@ Prior to generating code in STM32CubeIDE, set a basic timer (usually tim6 or tim
 
 The example below uses timer 6 which is a basic timer on the STM32 Nucleo F446RE board. It is configured to 84Mhz by default when checking the clock configuration tab of the IOC file. After checking what frequency your timer is running at go to the Pinout & Configuration tab, the timer you have chosen, and set the prescaler to whatever frequency -1 your timer is. Also ensure to set the counter period to the maximum value (usually 0xffff-1). Lastly set any GPIO capable pin of your choice to gpio_output. In the below example GPIO_PIN_1 has been chosen.
 
-![Clock Configuration](https://github.com/simarubhi/DHT11_Driver_STM32/blob/main/docs/clock_prescaler.png)
+![Clock Prescaler](https://github.com/simarubhi/DHT11_Driver_STM32/blob/main/docs/clock_prescaler.png)
 
 
 ### Basic Implementation
@@ -114,14 +106,6 @@ int main(void)
 
 }
 ```
-![UART Demo](https://github.com/simarubhi/DHT11_Driver_STM32/blob/main/docs/uart_demo.png)
-
-
-## 🔗 My Links
-[![portfolio](https://img.shields.io/badge/my_portfolio-000?style=for-the-badge&logo=ko-fi&logoColor=white)](https://simarubhi.com/)
-[![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/simar-ubhi/)
-
-
 ![UART Demo](https://github.com/simarubhi/DHT11_Driver_STM32/blob/main/docs/uart_demo.png)
 
 
