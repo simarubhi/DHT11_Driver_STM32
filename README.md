@@ -1,6 +1,11 @@
 
 # DHT11 Temperature Sensor Driver Library For STM32
 
+![DHT11](https://img.shields.io/badge/Module-DHT11-blue)
+![STM32](https://img.shields.io/badge/Microcontroller-STM32-white)
+![Project Status](https://img.shields.io/badge/Project-Finished-brightgreen)
+
+
 Driver library for the DHT11 temperature sensor for STM32 microcontrollers
 
 
